@@ -1,1 +1,44 @@
+public class GroceryItem {
+    private String name;
+    private double price;
 
+    public GroceryItem(String names, double prices) {
+        name = names;
+        price = prices;
+    }
+
+    public void displayInfo() {
+        System.out.println("Item: " + name + ", Price: $" + price);
+    }
+}
+
+// Subclasses representing specific grocery categories
+class Meat extends GroceryItem {
+    public Meat(String name, double price) {
+        super(name, price);
+    }
+
+    public void displayInfo() {
+        System.out.println("Meat - " + name + ": $" + price);
+    }
+}
+
+class Vegetable extends GroceryItem {
+    public Vegetable(String name, double price) {
+        super(name, price);
+    }
+
+    public void displayInfo() {
+        System.out.println("Vegetable - " + name + ": $" + price);
+    }
+}
+
+class Fruit extends GroceryItem {
+    public Fruit(String name, double price) {
+        super(name, price);
+    }
+
+    public void displayInfo() {
+        System.out.println("Fruit - " + name + ": $" + price);
+    }
+}
