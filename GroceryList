@@ -1,1 +1,13 @@
+public class GroceryList {
+    public static void main(String[] args) {
+        GroceryItem[] groceryList = {
+            new Meat("Chicken Breast", 5.99),
+            new Vegetable("Carrots", 2.49),
+            new Fruit("Apples", 3.99)
+        };
 
+        for (GroceryItem item : groceryList) {
+            item.displayInfo(); 
+        }
+    }
+}
